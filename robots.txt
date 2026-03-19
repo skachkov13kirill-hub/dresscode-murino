@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skachkov13kirill-hub.github.io/dresscode-murino/sitemap.xml
