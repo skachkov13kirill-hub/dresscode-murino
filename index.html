@@ -121,55 +121,7 @@
           Позвонить
           <svg class="call-dropdown__arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
-        <div class="call-dropdown__panel" id="callPanel" hidden>
-          <p class="call-dropdown__heading">Выберите ближайший филиал</p>
-          <ul class="call-dropdown__list">
-            <li><a href="tel:+79939682307" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Екатерининская, 8 к1</span>
-              <span class="call-dropdown__phone">+7 993 968-23-07</span>
-            </a></li>
-            <li><a href="tel:+79930730723" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Екатерининская, 17</span>
-              <span class="call-dropdown__phone">+7 993 073-07-23</span>
-            </a></li>
-            <li><a href="tel:+79669307473" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Воронцовский б-р, 20 к1</span>
-              <span class="call-dropdown__phone">+7 966 930-74-73</span>
-            </a></li>
-            <li><a href="tel:+79959116895" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Воронцовский б-р, 8</span>
-              <span class="call-dropdown__phone">+7 995 911-68-95</span>
-            </a></li>
-            <li><a href="tel:+79952346895" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Воронцовский б-р, 22</span>
-              <span class="call-dropdown__phone">+7 995 234-68-95</span>
-            </a></li>
-            <li><a href="tel:+79956256895" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Петровский б-р, 14 к5</span>
-              <span class="call-dropdown__phone">+7 995 625-68-95</span>
-            </a></li>
-            <li><a href="tel:+79819096885" class="call-dropdown__item">
-              <span class="call-dropdown__addr">б-р Менделеева, 16</span>
-              <span class="call-dropdown__phone">+7 981 909-68-85</span>
-            </a></li>
-            <li><a href="tel:+79112204620" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Охтинская аллея, 16</span>
-              <span class="call-dropdown__phone">+7 911 220-46-20</span>
-            </a></li>
-            <li><a href="tel:+79952336895" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Арсенальная ул., 6</span>
-              <span class="call-dropdown__phone">+7 995 233-68-95</span>
-            </a></li>
-            <li><a href="tel:+79952366895" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Графская ул., 4</span>
-              <span class="call-dropdown__phone">+7 995 236-68-95</span>
-            </a></li>
-            <li><a href="tel:+79522896702" class="call-dropdown__item">
-              <span class="call-dropdown__addr">Графская ул., 11</span>
-              <span class="call-dropdown__phone">+7 952 289-67-02</span>
-            </a></li>
-          </ul>
-        </div>
+
       </div>
 
       <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
@@ -415,51 +367,87 @@
 
         <div class="gallery-grid" id="galleryGrid">
           <figure class="gallery-item reveal" data-category="jacket">
-            <img src="images/before-after/ba-2.jpg" alt="Пальто — до и после реставрации" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-2.jpg"
+               srcset="images/before-after/ba-2-sm.jpg 400w, images/before-after/ba-2.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Пальто — до и после реставрации" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Пальто: добавление мехового воротника</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="suit">
-            <img src="images/before-after/ba-10.jpg" alt="Пиджак — ремонт дыры" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-10.jpg"
+               srcset="images/before-after/ba-10-sm.jpg 400w, images/before-after/ba-10.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Пиджак — ремонт дыры" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Пиджак: реставрация повреждения ткани</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="zip">
-            <img src="images/before-after/ba-3.jpg" alt="Замена молнии" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-3.jpg"
+               srcset="images/before-after/ba-3-sm.jpg 400w, images/before-after/ba-3.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Замена молнии" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Замена молнии</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="jacket">
-            <img src="images/before-after/ba-4.jpg" alt="Ремонт куртки" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-4.jpg"
+               srcset="images/before-after/ba-4-sm.jpg 400w, images/before-after/ba-4.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт куртки" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт куртки</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="suit">
-            <img src="images/before-after/ba-11.jpg" alt="Ремонт пиджака" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-11.jpg"
+               srcset="images/before-after/ba-11-sm.jpg 400w, images/before-after/ba-11.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт пиджака" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт пиджака</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="other">
-            <img src="images/before-after/ba-5.jpg" alt="Ремонт одежды" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-5.jpg"
+               srcset="images/before-after/ba-5-sm.jpg 400w, images/before-after/ba-5.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт одежды" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт одежды</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="jacket">
-            <img src="images/before-after/ba-6.jpg" alt="Ремонт пальто" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-6.jpg"
+               srcset="images/before-after/ba-6-sm.jpg 400w, images/before-after/ba-6.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт пальто" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт пальто</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="other">
-            <img src="images/before-after/ba-12.jpg" alt="Ремонт одежды" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-12.jpg"
+               srcset="images/before-after/ba-12-sm.jpg 400w, images/before-after/ba-12.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт одежды" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт одежды</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="zip">
-            <img src="images/before-after/ba-7.jpg" alt="Замена молнии" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-7.jpg"
+               srcset="images/before-after/ba-7-sm.jpg 400w, images/before-after/ba-7.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Замена молнии" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Замена молнии</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="jacket">
-            <img src="images/before-after/ba-13.jpg" alt="Ремонт куртки" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-13.jpg"
+               srcset="images/before-after/ba-13-sm.jpg 400w, images/before-after/ba-13.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт куртки" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт куртки</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="suit">
-            <img src="images/before-after/ba-8.jpg" alt="Ремонт костюма" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-8.jpg"
+               srcset="images/before-after/ba-8-sm.jpg 400w, images/before-after/ba-8.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт костюма" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт костюма</figcaption>
           </figure>
           <figure class="gallery-item reveal" data-category="other">
-            <img src="images/before-after/ba-14.jpg" alt="Ремонт одежды" loading="lazy" decoding="async" width="600" height="450">
+            <img src="images/before-after/ba-14.jpg"
+               srcset="images/before-after/ba-14-sm.jpg 400w, images/before-after/ba-14.jpg 900w"
+               sizes="(max-width: 640px) 400px, 900px"
+               alt="Ремонт одежды" loading="lazy" decoding="async" width="600" height="450">
             <figcaption>Ремонт одежды</figcaption>
           </figure>
         </div>
@@ -476,12 +464,27 @@
           <p class="equipment-section__sub">Janome, Jack, Brother, Juki — промышленные машины для идеального результата</p>
         </div>
         <div class="interior-strip__track reveal">
-          <img src="images/interior/interior-1.jpg" alt="Интерьер ателье DressCode" loading="lazy" decoding="async" width="400" height="300">
-          <img src="images/interior/interior-2.jpg" alt="Швейные машины ателье" loading="lazy" decoding="async" width="400" height="300">
+          <img src="images/interior/interior-1.jpg"
+               srcset="images/interior/interior-1-sm.jpg 500w, images/interior/interior-1.jpg 1200w"
+               sizes="(max-width: 640px) 500px, 1200px"
+               alt="Интерьер ателье DressCode" loading="lazy" decoding="async" width="400" height="300">
+          <img src="images/interior/interior-2.jpg"
+               srcset="images/interior/interior-2-sm.jpg 500w, images/interior/interior-2.jpg 1200w"
+               sizes="(max-width: 640px) 500px, 1200px"
+               alt="Швейные машины ателье" loading="lazy" decoding="async" width="400" height="300">
           <img src="images/interior/interior-7.jpg" alt="Рабочее место мастера" loading="lazy" decoding="async" width="400" height="300">
-          <img src="images/interior/interior-10.jpg" alt="Нитки и фурнитура" loading="lazy" decoding="async" width="400" height="300">
-          <img src="images/interior/interior-5.jpg" alt="Оборудование ателье" loading="lazy" decoding="async" width="400" height="300">
-          <img src="images/interior/interior-12.jpg" alt="Ателье DressCode" loading="lazy" decoding="async" width="400" height="300">
+          <img src="images/interior/interior-10.jpg"
+               srcset="images/interior/interior-10-sm.jpg 500w, images/interior/interior-10.jpg 1200w"
+               sizes="(max-width: 640px) 500px, 1200px"
+               alt="Нитки и фурнитура" loading="lazy" decoding="async" width="400" height="300">
+          <img src="images/interior/interior-5.jpg"
+               srcset="images/interior/interior-5-sm.jpg 500w, images/interior/interior-5.jpg 1200w"
+               sizes="(max-width: 640px) 500px, 1200px"
+               alt="Оборудование ателье" loading="lazy" decoding="async" width="400" height="300">
+          <img src="images/interior/interior-12.jpg"
+               srcset="images/interior/interior-12-sm.jpg 500w, images/interior/interior-12.jpg 1200w"
+               sizes="(max-width: 640px) 500px, 1200px"
+               alt="Ателье DressCode" loading="lazy" decoding="async" width="400" height="300">
         </div>
       </div>
     </section>
@@ -1062,6 +1065,56 @@
   </div>
 
   <!-- Call panel backdrop (mobile) -->
+  <!-- Call panel (at body level to avoid header stacking context) -->
+  <div class="call-dropdown__panel" id="callPanel" hidden>
+    <p class="call-dropdown__heading">Выберите ближайший филиал</p>
+    <ul class="call-dropdown__list">
+      <li><a href="tel:+79939682307" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Екатерининская, 8 к1</span>
+        <span class="call-dropdown__phone">+7 993 968-23-07</span>
+      </a></li>
+      <li><a href="tel:+79930730723" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Екатерининская, 17</span>
+        <span class="call-dropdown__phone">+7 993 073-07-23</span>
+      </a></li>
+      <li><a href="tel:+79669307473" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Воронцовский б-р, 20 к1</span>
+        <span class="call-dropdown__phone">+7 966 930-74-73</span>
+      </a></li>
+      <li><a href="tel:+79959116895" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Воронцовский б-р, 8</span>
+        <span class="call-dropdown__phone">+7 995 911-68-95</span>
+      </a></li>
+      <li><a href="tel:+79952346895" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Воронцовский б-р, 22</span>
+        <span class="call-dropdown__phone">+7 995 234-68-95</span>
+      </a></li>
+      <li><a href="tel:+79956256895" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Петровский б-р, 14 к5</span>
+        <span class="call-dropdown__phone">+7 995 625-68-95</span>
+      </a></li>
+      <li><a href="tel:+79819096885" class="call-dropdown__item">
+        <span class="call-dropdown__addr">б-р Менделеева, 16</span>
+        <span class="call-dropdown__phone">+7 981 909-68-85</span>
+      </a></li>
+      <li><a href="tel:+79112204620" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Охтинская аллея, 16</span>
+        <span class="call-dropdown__phone">+7 911 220-46-20</span>
+      </a></li>
+      <li><a href="tel:+79952336895" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Арсенальная ул., 6</span>
+        <span class="call-dropdown__phone">+7 995 233-68-95</span>
+      </a></li>
+      <li><a href="tel:+79952366895" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Графская ул., 4</span>
+        <span class="call-dropdown__phone">+7 995 236-68-95</span>
+      </a></li>
+      <li><a href="tel:+79522896702" class="call-dropdown__item">
+        <span class="call-dropdown__addr">Графская ул., 11</span>
+        <span class="call-dropdown__phone">+7 952 289-67-02</span>
+      </a></li>
+    </ul>
+  </div>
   <div class="call-backdrop" id="callBackdrop" hidden></div>
 
   <script src="js/main.js" defer></script>

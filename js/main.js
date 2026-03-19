@@ -397,3 +397,16 @@
   // Close on phone link tap
   panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
 })();
+
+
+/* ── 13. IMAGE FADE-IN on load ────────────────────────── */
+(function initImgFadeIn() {
+  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+    if (img.complete && img.naturalWidth > 0) {
+      img.classList.add('img-loaded');
+    } else {
+      img.addEventListener('load', () => img.classList.add('img-loaded'));
+      img.addEventListener('error', () => img.classList.add('img-loaded'));
+    }
+  });
+})();

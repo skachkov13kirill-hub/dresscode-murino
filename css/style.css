@@ -871,9 +871,9 @@ p  { color: var(--text-muted); }
   transform: rotate(180deg);
 }
 .call-dropdown__panel {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
+  position: fixed;
+  top: 68px;
+  right: var(--sp-3);
   background: var(--white);
   border-radius: var(--radius-lg);
   box-shadow: 0 16px 48px rgba(27,42,74,.22), 0 2px 8px rgba(27,42,74,.1);
@@ -1211,6 +1211,15 @@ p  { color: var(--text-muted); }
 /* ── Saturated photos ─────────────────────────────────── */
 .gallery-item img {
   filter: saturate(1.15) contrast(1.04);
+}
+
+/* ── Image fade-in on load ────────────────────────────── */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+img[loading="lazy"].img-loaded {
+  opacity: 1;
 }
 .interior-strip__track img {
   filter: saturate(1.1);
