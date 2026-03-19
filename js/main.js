@@ -319,11 +319,12 @@
 
 /* ── 12. CALL DROPDOWN / BOTTOM SHEET ────────────────── */
 (function initCallDropdown() {
-  const trigger      = document.getElementById('callTrigger');
-  const panel        = document.getElementById('callPanel');
-  const backdrop     = document.getElementById('callBackdrop');
-  const mobileTrigger = document.getElementById('mobileCallBtn');
-  const ctaTrigger   = document.getElementById('ctaCallBtn');
+  const trigger        = document.getElementById('callTrigger');
+  const panel          = document.getElementById('callPanel');
+  const backdrop       = document.getElementById('callBackdrop');
+  const mobileTrigger  = document.getElementById('mobileCallBtn');
+  const ctaTrigger     = document.getElementById('ctaCallBtn');
+  const pricingTrigger = document.getElementById('pricingCallBtn');
   if (!panel) return;
 
   const isMobile = () => window.innerWidth < 768;
@@ -366,6 +367,14 @@
     });
   }
 
+  // Pricing block trigger
+  if (pricingTrigger) {
+    pricingTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      open(pricingTrigger);
+    });
+  }
+
   // Backdrop click closes
   if (backdrop) backdrop.addEventListener('click', close);
 
@@ -375,7 +384,8 @@
       !panel.contains(e.target) &&
       (!trigger || !trigger.contains(e.target)) &&
       (!mobileTrigger || !mobileTrigger.contains(e.target)) &&
-      (!ctaTrigger || !ctaTrigger.contains(e.target))
+      (!ctaTrigger || !ctaTrigger.contains(e.target)) &&
+      (!pricingTrigger || !pricingTrigger.contains(e.target))
     ) close();
   });
 
