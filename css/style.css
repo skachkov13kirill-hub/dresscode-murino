@@ -1252,22 +1252,59 @@ p  { color: var(--text-muted); }
   html { scroll-behavior: auto; }
 }
 
-/* ── Mobile hero centering (< 640px) ──────────────────── */
+/* ── Mobile full centering (< 640px) ──────────────────── */
 @media (max-width: 639px) {
+
+  /* Hero */
   .hero__content {
     text-align: center;
     margin-left: var(--sp-2);
     margin-right: var(--sp-2);
   }
-  .hero__actions {
-    justify-content: center;
+  .hero__actions { justify-content: center; }
+  .hero__trust   { justify-content: center; }
+
+  /* Brands strip */
+  .brands-strip__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--sp-2);
   }
-  .hero__trust {
-    justify-content: center;
-  }
+  .brands-strip__logos { justify-content: center; }
+
+  /* Section CTA buttons */
   .section-cta {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  /* Service cards */
+  .service-card { text-align: center; }
+  .service-card__icon { margin: 0 auto var(--sp-2); }
+
+  /* Why cards */
+  .why-card { text-align: center; }
+
+  /* Trust bar */
+  .trust-bar__grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Pricing categories */
+  .pricing-cat__title { justify-content: center; }
+
+  /* Branch cards */
+  .branch-card__header { justify-content: center; text-align: center; }
+  .branch-card__actions { flex-direction: column; }
+  .branch-card__map-link { justify-content: center; width: 100%; }
+
+  /* Testimonials author */
+  .testimonial-card__author { align-items: center; }
+
+  /* FAQ */
+  .faq-question { text-align: left; }
+
+  /* Section eyebrow + subtitle */
+  .section-eyebrow { text-align: center; display: block; }
+  .section-subtitle { text-align: center; }
 }
