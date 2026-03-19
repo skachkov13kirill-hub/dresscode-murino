@@ -317,37 +317,73 @@
 })();
 
 
-/* ── 12. CALL DROPDOWN ────────────────────────────────── */
+/* ── 12. CALL DROPDOWN / BOTTOM SHEET ────────────────── */
 (function initCallDropdown() {
-  const trigger = document.getElementById('callTrigger');
-  const panel   = document.getElementById('callPanel');
-  if (!trigger || !panel) return;
+  const trigger      = document.getElementById('callTrigger');
+  const panel        = document.getElementById('callPanel');
+  const backdrop     = document.getElementById('callBackdrop');
+  const mobileTrigger = document.getElementById('mobileCallBtn');
+  const ctaTrigger   = document.getElementById('ctaCallBtn');
+  if (!panel) return;
 
-  const open = () => {
+  const isMobile = () => window.innerWidth < 768;
+
+  const open = (fromEl) => {
     panel.removeAttribute('hidden');
-    trigger.setAttribute('aria-expanded', 'true');
+    if (trigger) trigger.setAttribute('aria-expanded', 'true');
+    if (backdrop && isMobile()) backdrop.removeAttribute('hidden');
+    document.body.style.overflow = isMobile() ? 'hidden' : '';
   };
 
   const close = () => {
     panel.setAttribute('hidden', '');
-    trigger.setAttribute('aria-expanded', 'false');
+    if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    if (backdrop) backdrop.setAttribute('hidden', '');
+    document.body.style.overflow = '';
   };
 
-  trigger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    trigger.getAttribute('aria-expanded') === 'true' ? close() : open();
-  });
+  // Header trigger (desktop)
+  if (trigger) {
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      panel.hasAttribute('hidden') ? open(trigger) : close();
+    });
+  }
 
-  // Close on outside click
+  // Mobile sticky bar trigger
+  if (mobileTrigger) {
+    mobileTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      open(mobileTrigger);
+    });
+  }
+
+  // CTA block trigger
+  if (ctaTrigger) {
+    ctaTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      open(ctaTrigger);
+    });
+  }
+
+  // Backdrop click closes
+  if (backdrop) backdrop.addEventListener('click', close);
+
+  // Outside click closes (desktop)
   document.addEventListener('click', (e) => {
-    if (!trigger.contains(e.target) && !panel.contains(e.target)) close();
+    if (
+      !panel.contains(e.target) &&
+      (!trigger || !trigger.contains(e.target)) &&
+      (!mobileTrigger || !mobileTrigger.contains(e.target)) &&
+      (!ctaTrigger || !ctaTrigger.contains(e.target))
+    ) close();
   });
 
-  // Close on Esc
+  // Esc closes
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') close();
   });
 
-  // Close when a phone link is tapped
+  // Close on phone link tap
   panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
 })();
