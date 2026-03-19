@@ -146,10 +146,10 @@ p  { color: var(--text-muted); }
   transition: background var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
 }
 .header.scrolled {
-  background: rgba(27,42,74,.97);
+  background: rgba(8, 12, 24, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 4px 24px rgba(0,0,0,.25);
+  box-shadow: 0 4px 24px rgba(0,0,0,.4);
 }
 .header__inner {
   display: flex;
@@ -163,7 +163,8 @@ p  { color: var(--text-muted); }
   height: 44px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(197,165,90,.45));
+  filter: none;
+  mix-blend-mode: screen;
 }
 
 /* Nav */
@@ -461,12 +462,13 @@ p  { color: var(--text-muted); }
 }
 .why-card__num {
   font-family: 'Oswald', var(--font-ui);
-  font-size: 3.5rem;
+  font-size: clamp(3rem, 6vw, 4.5rem);
   font-weight: 700;
-  color: rgba(197,165,90,.2);
+  color: var(--gold);
   line-height: 1;
   margin-bottom: var(--sp-1);
   -webkit-font-smoothing: antialiased;
+  letter-spacing: .02em;
 }
 .why-card__title {
   font-family: var(--font-ui);
