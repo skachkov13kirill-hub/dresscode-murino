@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DressCode — Сеть ателье по ремонту одежды в Мурино</title>
+  <meta name="description" content="DressCode — крупнейшая сеть ателье по ремонту и пошиву одежды в Мурино. 11 филиалов, 71 658 выполненных заказов с 2017 года. Замена молний, подшив, реставрация.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DressCode — Ателье по ремонту одежды в Мурино">
+  <meta property="og:description" content="Крупнейшая сеть ателье Ленинградской области. 11 филиалов, более 71 000 выполненных заказов.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/interior/interior-7.jpg">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts: async to avoid render blocking -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Inter:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap"
+        media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Inter:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap">
+  </noscript>
+
+  <!-- Critical styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="images/interior/interior-7.jpg">
+
+  <!-- Schema: organization + branches -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "dresscode-murino",
+    "name": "DressCode",
+    "alternateName": "Ателье DressCode",
+    "description": "Крупнейшая сеть ателье по ремонту и пошиву одежды в Ленинградской области. 11 филиалов в Мурино.",
+    "foundingDate": "2017",
+    "telephone": "+79939682307",
+    "url": "https://dresscode-murino.ru",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Екатерининская ул., 8 к1",
+      "addressLocality": "Мурино",
+      "addressRegion": "Ленинградская область",
+      "addressCountry": "RU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "60.0447",
+      "longitude": "30.4564"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "20:00"
+    },
+    "priceRange": "₽₽",
+    "image": "images/interior/interior-7.jpg"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════ HEADER ═══ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="DressCode — на главную">
+        <img src="images/logo.png" alt="DressCode" class="logo__img" width="120" height="60">
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#pricing" class="nav__link">Цены</a></li>
+          <li><a href="#gallery" class="nav__link">Работы</a></li>
+          <li><a href="#branches" class="nav__link">Филиалы</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="call-dropdown" id="callDropdown">
+        <button class="btn btn--gold header__cta call-dropdown__trigger" id="callTrigger"
+                type="button" aria-expanded="false" aria-haspopup="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Позвонить
+          <svg class="call-dropdown__arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="call-dropdown__panel" id="callPanel" hidden>
+          <p class="call-dropdown__heading">Выберите ближайший филиал</p>
+          <ul class="call-dropdown__list">
+            <li><a href="tel:+79939682307" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Екатерининская, 8 к1</span>
+              <span class="call-dropdown__phone">+7 993 968-23-07</span>
+            </a></li>
+            <li><a href="tel:+79930730723" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Екатерининская, 17</span>
+              <span class="call-dropdown__phone">+7 993 073-07-23</span>
+            </a></li>
+            <li><a href="tel:+79669307473" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Воронцовский б-р, 20 к1</span>
+              <span class="call-dropdown__phone">+7 966 930-74-73</span>
+            </a></li>
+            <li><a href="tel:+79959116895" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Воронцовский б-р, 8</span>
+              <span class="call-dropdown__phone">+7 995 911-68-95</span>
+            </a></li>
+            <li><a href="tel:+79952346895" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Воронцовский б-р, 22</span>
+              <span class="call-dropdown__phone">+7 995 234-68-95</span>
+            </a></li>
+            <li><a href="tel:+79956256895" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Петровский б-р, 14 к5</span>
+              <span class="call-dropdown__phone">+7 995 625-68-95</span>
+            </a></li>
+            <li><a href="tel:+79819096885" class="call-dropdown__item">
+              <span class="call-dropdown__addr">б-р Менделеева, 16</span>
+              <span class="call-dropdown__phone">+7 981 909-68-85</span>
+            </a></li>
+            <li><a href="tel:+79112204620" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Охтинская аллея, 16</span>
+              <span class="call-dropdown__phone">+7 911 220-46-20</span>
+            </a></li>
+            <li><a href="tel:+79952336895" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Арсенальная ул., 6</span>
+              <span class="call-dropdown__phone">+7 995 233-68-95</span>
+            </a></li>
+            <li><a href="tel:+79952366895" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Графская ул., 4</span>
+              <span class="call-dropdown__phone">+7 995 236-68-95</span>
+            </a></li>
+            <li><a href="tel:+79522896702" class="call-dropdown__item">
+              <span class="call-dropdown__addr">Графская ул., 11</span>
+              <span class="call-dropdown__phone">+7 952 289-67-02</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul class="mobile-nav__list">
+      <li><a href="#services" class="mobile-nav__link">Услуги</a></li>
+      <li><a href="#pricing" class="mobile-nav__link">Цены</a></li>
+      <li><a href="#gallery" class="mobile-nav__link">Работы</a></li>
+      <li><a href="#branches" class="mobile-nav__link">Филиалы</a></li>
+      <li><a href="#contacts" class="mobile-nav__link">Контакты</a></li>
+      <li>
+        <a href="tel:+79939682307" class="btn btn--gold" style="width:100%;justify-content:center;margin-top:8px;">
+          Позвонить
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <img src="images/interior/interior-7.jpg"
+             alt="Ателье DressCode — рабочее пространство"
+             class="hero__bg-img"
+             width="1920" height="1080"
+             fetchpriority="high">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">Мурино · Ленинградская область</p>
+        <h1 class="hero__title reveal reveal--delay-1">
+          Крупнейшая сеть ателье<br>Ленинградской области
+        </h1>
+        <p class="hero__subtitle reveal reveal--delay-2">
+          11 филиалов в Мурино. Ремонт и пошив одежды — профессионально, быстро, с гарантией.
+        </p>
+        <div class="hero__actions reveal reveal--delay-3">
+          <a href="#branches" class="btn btn--gold btn--lg">Найти ближайший филиал</a>
+          <a href="#pricing" class="btn btn--outline btn--lg">Узнать цены</a>
+        </div>
+        <div class="hero__trust reveal reveal--delay-4">
+          <span class="hero__trust-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C5A55A" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            4.9 в Яндексе
+          </span>
+          <span class="hero__trust-item">с 2017 года</span>
+          <span class="hero__trust-item">71 658 заказов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ TRUST BAR ═══ -->
+    <section class="trust-bar" aria-label="Ключевые показатели">
+      <div class="container trust-bar__grid">
+        <div class="trust-bar__item">
+          <span class="trust-bar__num" data-count="11">0</span>
+          <span class="trust-bar__label">филиалов в Мурино</span>
+        </div>
+        <div class="trust-bar__item">
+          <span class="trust-bar__num" data-count="71658">0</span>
+          <span class="trust-bar__label">выполненных заказов</span>
+        </div>
+        <div class="trust-bar__item">
+          <span class="trust-bar__num" data-count="2017" data-prefix="с ">0</span>
+          <span class="trust-bar__label">года работаем</span>
+        </div>
+        <div class="trust-bar__item">
+          <span class="trust-bar__num">№ 1</span>
+          <span class="trust-bar__label">сеть ателье Ленобласти</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ BRANDS ═══ -->
+    <div class="brands-strip">
+      <div class="container brands-strip__inner">
+        <span class="brands-strip__label">Работаем на оборудовании</span>
+        <div class="brands-strip__logos">
+          <span class="brands-strip__brand">Janome</span>
+          <span class="brands-strip__brand">Jack</span>
+          <span class="brands-strip__brand">Brother</span>
+          <span class="brands-strip__brand">Juki</span>
+          <span class="brands-strip__brand">Singer</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ SERVICES ═══ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Что мы делаем</p>
+          <h2 class="section-title">Услуги ателье</h2>
+          <p class="section-subtitle">Берёмся за любой ремонт — от замены бегунка до полной реставрации изделия</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="service-card__title">Замена молний</h3>
+            <p class="service-card__desc">Куртки, пуховики, пальто, брюки, джинсы, сумки, юбки — любые типы молний</p>
+            <span class="service-card__price">от 1 000 ₽</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </div>
+            <h3 class="service-card__title">Подшив и укорачивание</h3>
+            <p class="service-card__desc">Брюки, джинсы, рубашки, платья, пиджаки, шторы — аккуратно и быстро</p>
+            <span class="service-card__price">от 800 ₽</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <h3 class="service-card__title">Ремонт и реставрация</h3>
+            <p class="service-card__desc">Штопка, устранение разрывов и дыр, ремонт расходящихся швов</p>
+            <span class="service-card__price">от 1 000 ₽</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h3 class="service-card__title">Подгонка по фигуре</h3>
+            <p class="service-card__desc">Ушивание, приталивание, расширение — подберём идеальную посадку</p>
+            <span class="service-card__price">от 1 300 ₽</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="service-card__title">Замена подкладки</h3>
+            <p class="service-card__desc">Пальто, куртки, пуховики, пиджаки — восстановим изделие как новое</p>
+            <span class="service-card__price">от 3 200 ₽</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="service-card__title">Шторы</h3>
+            <p class="service-card__desc">Укорачивание, установка шторной ленты, подрубка — любые размеры</p>
+            <span class="service-card__price">от 300 ₽/м</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 class="service-card__title">Срочный ремонт</h3>
+            <p class="service-card__desc">Большинство несложных работ выполняем в день обращения</p>
+            <span class="service-card__price">уточняйте</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+            </div>
+            <h3 class="service-card__title">Фурнитура</h3>
+            <p class="service-card__desc">Установка бегунков, кнопок, крючков. ВТО брюк, пиджаков, рубашек</p>
+            <span class="service-card__price">от 300 ₽</span>
+          </article>
+
+        </div>
+
+        <div class="section-cta reveal">
+          <a href="tel:+79939682307" class="btn btn--gold btn--lg">Позвонить и уточнить</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ WHY ═══ -->
+    <section class="section section--navy" id="why">
+      <div class="container">
+        <div class="section-head section-head--light reveal">
+          <p class="section-eyebrow section-eyebrow--gold">Почему DressCode</p>
+          <h2 class="section-title section-title--white">Нам доверяют вещи</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-card__num">01</div>
+            <h3 class="why-card__title">Крупнейшая сеть</h3>
+            <p class="why-card__text">11 филиалов — это стабильность, отлаженные процессы и единые стандарты качества. Не частный мастер с нестабильным графиком.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-card__num">02</div>
+            <h3 class="why-card__title">Опыт с 2017 года</h3>
+            <p class="why-card__text">71 658 выполненных заказов — каждый мастер знает как работать с любым типом ткани, фурнитуры и сложности.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-card__num">03</div>
+            <h3 class="why-card__title">Рядом с домом</h3>
+            <p class="why-card__text">Один из 11 филиалов точно находится в пешей доступности. Не нужно ехать в другой район.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-card__num">04</div>
+            <h3 class="why-card__title">Честные цены</h3>
+            <p class="why-card__text">Стоимость известна заранее. Прайс публикуем открыто — никаких сюрпризов после сдачи вещи.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-card__num">05</div>
+            <h3 class="why-card__title">Быстро</h3>
+            <p class="why-card__text">Большинство работ — за 1–3 дня. Срочные заказы выполняем в день обращения при наличии материалов.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ GALLERY ═══ -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Наши работы</p>
+          <h2 class="section-title">До и после</h2>
+          <p class="section-subtitle">Реальные заказы наших клиентов — ничего постановочного</p>
+        </div>
+
+        <div class="gallery-filters reveal" role="group" aria-label="Фильтры галереи">
+          <button class="filter-btn filter-btn--active" data-filter="all">Все работы</button>
+          <button class="filter-btn" data-filter="jacket">Куртки и пальто</button>
+          <button class="filter-btn" data-filter="suit">Костюмы и пиджаки</button>
+          <button class="filter-btn" data-filter="zip">Молнии</button>
+          <button class="filter-btn" data-filter="other">Прочее</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <figure class="gallery-item reveal" data-category="jacket">
+            <img src="images/before-after/ba-2.png" alt="Пальто — до и после реставрации" loading="lazy" width="600" height="450">
+            <figcaption>Пальто: добавление мехового воротника</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="suit">
+            <img src="images/before-after/ba-10.jpg" alt="Пиджак — ремонт дыры" loading="lazy" width="600" height="450">
+            <figcaption>Пиджак: реставрация повреждения ткани</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="zip">
+            <img src="images/before-after/ba-3.png" alt="Замена молнии" loading="lazy" width="600" height="450">
+            <figcaption>Замена молнии</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="jacket">
+            <img src="images/before-after/ba-4.png" alt="Ремонт куртки" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт куртки</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="suit">
+            <img src="images/before-after/ba-11.jpg" alt="Ремонт пиджака" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт пиджака</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="other">
+            <img src="images/before-after/ba-5.png" alt="Ремонт одежды" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт одежды</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="jacket">
+            <img src="images/before-after/ba-6.png" alt="Ремонт пальто" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт пальто</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="other">
+            <img src="images/before-after/ba-12.jpg" alt="Ремонт одежды" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт одежды</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="zip">
+            <img src="images/before-after/ba-7.png" alt="Замена молнии" loading="lazy" width="600" height="450">
+            <figcaption>Замена молнии</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="jacket">
+            <img src="images/before-after/ba-13.jpg" alt="Ремонт куртки" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт куртки</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="suit">
+            <img src="images/before-after/ba-8.png" alt="Ремонт костюма" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт костюма</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="other">
+            <img src="images/before-after/ba-14.jpg" alt="Ремонт одежды" loading="lazy" width="600" height="450">
+            <figcaption>Ремонт одежды</figcaption>
+          </figure>
+        </div>
+
+        <!-- Interior photos strip -->
+        <div class="interior-strip reveal">
+          <p class="interior-strip__label">Работаем на профессиональном оборудовании</p>
+          <div class="interior-strip__track">
+            <img src="images/interior/interior-1.jpg" alt="Интерьер ателье DressCode" loading="lazy" width="400" height="300">
+            <img src="images/interior/interior-2.jpg" alt="Швейные машины ателье" loading="lazy" width="400" height="300">
+            <img src="images/interior/interior-7.jpg" alt="Рабочее место мастера" loading="lazy" width="400" height="300">
+            <img src="images/interior/interior-10.jpg" alt="Нитки и фурнитура" loading="lazy" width="400" height="300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    </div>
+
+    <!-- ═══════════════════════════════════════ PRICING ═══ -->
+    <section class="section section--light" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Прозрачно и честно</p>
+          <h2 class="section-title">Цены на услуги</h2>
+          <p class="section-subtitle">Все цены указаны «от» — точная стоимость после осмотра изделия</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <div class="pricing-cat reveal">
+            <h3 class="pricing-cat__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Куртки и пуховики
+            </h3>
+            <ul class="pricing-list">
+              <li class="pricing-item"><span>Замена молнии куртки</span><span>от 1 800 ₽</span></li>
+              <li class="pricing-item"><span>Замена молнии пуховика / пальто</span><span>от 2 500 ₽</span></li>
+              <li class="pricing-item"><span>Замена подкладки куртки</span><span>от 3 200 ₽</span></li>
+              <li class="pricing-item"><span>Замена подкладки пуховика</span><span>от 3 500 ₽</span></li>
+              <li class="pricing-item"><span>Замена подкладки пальто</span><span>от 3 800 ₽</span></li>
+              <li class="pricing-item"><span>Замена трикотажных манжет рукавов</span><span>от 1 600 ₽</span></li>
+              <li class="pricing-item"><span>Укоротить рукава куртки</span><span>от 2 000 ₽</span></li>
+            </ul>
+          </div>
+
+          <div class="pricing-cat reveal">
+            <h3 class="pricing-cat__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              Пиджаки и костюмы
+            </h3>
+            <ul class="pricing-list">
+              <li class="pricing-item"><span>Укоротить низ пиджака</span><span>от 1 800 ₽</span></li>
+              <li class="pricing-item"><span>Укоротить рукав через откат</span><span>от 2 900 ₽</span></li>
+              <li class="pricing-item"><span>Замена подклада пиджака</span><span>от 3 500 ₽</span></li>
+              <li class="pricing-item"><span>Замена мешковины кармана</span><span>от 1 500 ₽</span></li>
+              <li class="pricing-item"><span>ВТО пиджака</span><span>от 750 ₽</span></li>
+            </ul>
+          </div>
+
+          <div class="pricing-cat reveal">
+            <h3 class="pricing-cat__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              Брюки и джинсы
+            </h3>
+            <ul class="pricing-list">
+              <li class="pricing-item"><span>Замена молнии в брюках / джинсах</span><span>от 1 000 ₽</span></li>
+              <li class="pricing-item"><span>Укоротить классические брюки</span><span>от 900 ₽</span></li>
+              <li class="pricing-item"><span>Укоротить низ джинсов</span><span>от 800 ₽</span></li>
+              <li class="pricing-item"><span>Ушить джинсы</span><span>от 1 300 ₽</span></li>
+              <li class="pricing-item"><span>Штопка брюк / джинсов</span><span>от 1 000 ₽</span></li>
+              <li class="pricing-item"><span>ВТО брюк</span><span>от 500 ₽</span></li>
+            </ul>
+          </div>
+
+          <div class="pricing-cat reveal">
+            <h3 class="pricing-cat__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              Юбки и рубашки
+            </h3>
+            <ul class="pricing-list">
+              <li class="pricing-item"><span>Замена молнии в юбке</span><span>от 1 000 ₽</span></li>
+              <li class="pricing-item"><span>Ушить юбку по бокам</span><span>от 2 500 ₽</span></li>
+              <li class="pricing-item"><span>Укоротить рубашку</span><span>от 1 000 ₽</span></li>
+              <li class="pricing-item"><span>Укоротить рукав рубашки</span><span>от 1 400 ₽</span></li>
+              <li class="pricing-item"><span>Укоротить футболку</span><span>от 800 ₽</span></li>
+              <li class="pricing-item"><span>ВТО рубашки / сорочки</span><span>от 600 ₽</span></li>
+            </ul>
+          </div>
+
+          <div class="pricing-cat reveal">
+            <h3 class="pricing-cat__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9h18M3 15h18M12 3v18"/></svg>
+              Шторы и текстиль
+            </h3>
+            <ul class="pricing-list">
+              <li class="pricing-item"><span>Укоротить шторы</span><span>от 300 ₽/м</span></li>
+              <li class="pricing-item"><span>Установка шторной ленты</span><span>от 500 ₽/м</span></li>
+              <li class="pricing-item"><span>Укоротить стандартное окно</span><span>от 900 ₽</span></li>
+            </ul>
+          </div>
+
+          <div class="pricing-cat reveal">
+            <h3 class="pricing-cat__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Фурнитура и прочее
+            </h3>
+            <ul class="pricing-list">
+              <li class="pricing-item"><span>Установка бегунка</span><span>от 400 ₽</span></li>
+              <li class="pricing-item"><span>Установка кнопки</span><span>от 300 ₽</span></li>
+              <li class="pricing-item"><span>Замена молнии в рюкзаке</span><span>от 2 000 ₽</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="pricing-note reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Точная стоимость определяется мастером после осмотра изделия. Позвоните — ответим на любые вопросы.
+        </p>
+
+        <div class="section-cta reveal">
+          <a href="tel:+79939682307" class="btn btn--gold btn--lg">Уточнить стоимость</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ TESTIMONIALS ═══ -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Отзывы</p>
+          <h2 class="section-title">Что говорят клиенты</h2>
+        </div>
+
+        <div class="testimonials-track reveal">
+          <div class="testimonials-list" id="testimonialsList">
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="testimonial-card__text">«Сдала зимнюю куртку — сломалась молния, боялась что испортят. Сделали за день, молния ходит идеально. Мастер показала несколько вариантов цвета, помогла выбрать. Цена очень приятная.»</p>
+              <footer class="testimonial-card__author">
+                <strong>Анна К.</strong>
+                <span>Замена молнии куртки</span>
+              </footer>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="testimonial-card__text">«Приносил любимые джинсы с огромной дырой на колене — думал что только выбрасывать. Отремонтировали так, что практически незаметно. Теперь ношу как ни в чём не бывало.»</p>
+              <footer class="testimonial-card__author">
+                <strong>Дмитрий В.</strong>
+                <span>Штопка джинсов</span>
+              </footer>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="testimonial-card__text">«Нашла ателье рядом с домом — очень удобно. Подшила брюки с удлинёнными ногами, всё точно в размер. Быстро, недорого, мастер приветливая. Буду ходить только сюда.»</p>
+              <footer class="testimonial-card__author">
+                <strong>Светлана М.</strong>
+                <span>Подшив брюк</span>
+              </footer>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="testimonial-card__text">«Отдавал пиджак на замену подкладки — старая совсем истёрлась. Сделали аккуратно, подкладку подобрали в тон. Пиджак снова как новый. Всем рекомендую это ателье.»</p>
+              <footer class="testimonial-card__author">
+                <strong>Игорь П.</strong>
+                <span>Замена подкладки пиджака</span>
+              </footer>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="testimonial-card__text">«Сдала шторы — нужно было укоротить под новую высоту потолков. Сделали ровно, швы аккуратные. Работа заняла 2 дня. Цена за метр очень доступная. Спасибо большое!»</p>
+              <footer class="testimonial-card__author">
+                <strong>Ольга Н.</strong>
+                <span>Укорачивание штор</span>
+              </footer>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+              <p class="testimonial-card__text">«Сеть работает стабильно — уже третий раз прихожу в разные филиалы, и везде одинаково хорошее качество. Последний раз подогнали пальто по фигуре — результат превзошёл ожидания.»</p>
+              <footer class="testimonial-card__author">
+                <strong>Марина Л.</strong>
+                <span>Подгонка пальто</span>
+              </footer>
+            </article>
+
+          </div>
+
+          <div class="testimonials-nav" aria-label="Навигация по отзывам">
+            <button class="testimonials-btn" id="testimonialPrev" aria-label="Предыдущий отзыв">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="testimonials-btn" id="testimonialNext" aria-label="Следующий отзыв">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ BRANCHES ═══ -->
+    <section class="section section--light" id="branches">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">11 филиалов</p>
+          <h2 class="section-title">Найдите ближайший</h2>
+          <p class="section-subtitle">Все филиалы работают без выходных</p>
+        </div>
+
+        <div class="branches-grid">
+
+          <!-- SVG icons reused inline for brevity via a template -->
+
+          <article class="branch-card reveal">
+            <div class="branch-card__header">
+              <span class="branch-card__badge">До 22:00</span>
+              <h3 class="branch-card__name">Екатерининская, 8 к1</h3>
+            </div>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Екатерининская ул., 8 к1</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 — 22:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79939682307" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 993 968-23-07
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Екатерининская+8" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Екатерининская, 17</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Екатерининская ул., 17</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79930730723" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 993 073-07-23
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Екатерининская+17" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Воронцовский б-р, 20 к1</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Воронцовский б-р, 20 к1</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79669307473" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 966 930-74-73
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Воронцовский+бульвар+20" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Воронцовский б-р, 8</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Воронцовский б-р, 8</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79959116895" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 995 911-68-95
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Воронцовский+бульвар+8" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Воронцовский б-р, 22</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Воронцовский б-р, 22</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79952346895" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 995 234-68-95
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Воронцовский+бульвар+22" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Петровский б-р, 14 к5</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Петровский б-р, 14 к5</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79956256895" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 995 625-68-95
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Петровский+бульвар+14" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">б-р Менделеева, 16</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, б-р Менделеева, 16 (м. Девяткино)</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79819096885" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 981 909-68-85
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+бульвар+Менделеева+16" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Охтинская аллея, 16</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Охтинская аллея, 16</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79112204620" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 911 220-46-20
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Охтинская+аллея+16" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Арсенальная ул., 6</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Арсенальная ул., 6</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79952336895" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 995 233-68-95
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Арсенальная+6" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Графская ул., 4</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Графская ул., 4</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79952366895" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 995 236-68-95
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Графская+4" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+          <article class="branch-card reveal">
+            <h3 class="branch-card__name">Графская ул., 11</h3>
+            <ul class="branch-card__info">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg> Мурино, Графская ул., 11</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 — 20:00</li>
+            </ul>
+            <div class="branch-card__actions">
+              <a href="tel:+79522896702" class="btn btn--gold branch-card__btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +7 952 289-67-02
+              </a>
+              <a href="https://yandex.ru/maps/?text=Мурино+Графская+11" target="_blank" rel="noopener" class="branch-card__map-link" aria-label="Показать на Яндекс.Картах">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+                На карте
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Yandex Map -->
+        <div class="map-wrap reveal">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?text=ателье+DressCode+Мурино&ll=30.4600%2C60.0455&z=13&l=map"
+            class="map"
+            title="Филиалы DressCode на карте Мурино"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ FAQ ═══ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Вопросы и ответы</p>
+          <h2 class="section-title">Часто спрашивают</h2>
+        </div>
+
+        <div class="faq-list reveal">
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Сколько времени занимает ремонт?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Большинство работ выполняется за 1–3 дня. Несложные заказы (замена бегунка, подшив брюк) часто делаем в день обращения. Срок зависит от загруженности мастера и сложности работы — уточняйте при сдаче.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Как узнать точную стоимость?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Позвоните нам или принесите вещь в ближайший филиал — мастер осмотрит изделие и назовёт точную цену. На сайте указаны цены «от» — финальная стоимость зависит от состояния ткани, сложности работы и модели.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Работаете без выходных?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Да, все филиалы работают 7 дней в неделю без выходных. Режим работы зависит от конкретного филиала — от 10:00 до 20:00 в большинстве точек, отдельные работают до 22:00.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Берёте ли кожу и замшу?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Уточняйте по конкретному виду работ — звоните, опишем возможности. Большинство базовых работ с кожаными изделиями мы выполняем.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Как забрать вещь из другого филиала?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Вещи сдаются и забираются в том же филиале, куда вы обратились. Если нужен перенос между точками — уточните у мастера, постараемся помочь.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Есть ли гарантия на работу?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Да. Если в течение разумного срока обнаружится дефект по нашей вине — переделаем бесплатно. 71 658 выполненных заказов говорят сами за себя.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CTA BLOCK ═══ -->
+    <section class="cta-block" id="contacts">
+      <div class="container">
+        <div class="cta-block__inner reveal">
+          <h2 class="cta-block__title">Есть что починить?</h2>
+          <p class="cta-block__sub">Позвоните в ближайший филиал — ответим на вопросы и примем вашу вещь</p>
+          <a href="tel:+79939682307" class="btn btn--gold btn--lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Позвонить сейчас
+          </a>
+          <p class="cta-block__note">Работаем ежедневно · 11 филиалов в Мурино</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <img src="images/logo.png" alt="DressCode" class="footer__logo" width="100" height="50" loading="lazy">
+        <p class="footer__tagline">Крупнейшая сеть ателье Ленинградской области</p>
+        <p class="footer__since">С нами с 2017 года · 71 658 заказов</p>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__nav-title">Навигация</h4>
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#gallery">Работы</a></li>
+          <li><a href="#branches">Филиалы</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contacts">
+        <h4 class="footer__nav-title">Контакты</h4>
+        <ul>
+          <li><a href="tel:+79939682307">+7 993 968-23-07</a></li>
+          <li><a href="tel:+79930730723">+7 993 073-07-23</a></li>
+          <li><a href="tel:+79669307473">+7 966 930-74-73</a></li>
+          <li><a href="tel:+79522896702">+7 952 289-67-02</a></li>
+        </ul>
+        <p class="footer__hours">Пн–Вс · 10:00 – 22:00</p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2017–2026 DressCode. Все права защищены.</p>
+        <a href="/privacy.html" class="footer__policy">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════ MOBILE STICKY BAR ═══ -->
+  <div class="mobile-bar" id="mobileBar" aria-label="Быстрый звонок">
+    <a href="tel:+79939682307" class="mobile-bar__btn mobile-bar__btn--primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Позвонить
+    </a>
+    <a href="#branches" class="mobile-bar__btn mobile-bar__btn--secondary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 00-8 8c0 5.25 8 14 8 14s8-8.75 8-14a8 8 0 00-8-8z"/></svg>
+      Филиалы
+    </a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

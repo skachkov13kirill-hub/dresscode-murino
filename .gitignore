@@ -1,0 +1,22 @@
+# System
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# Raw source files (already processed/copied to images/)
+IMG_6754.jpg
+"Лого DressCode.PNG"
+"Новая таблица.xlsx"
+"price-list-template (2).xls"
+"New File"
+
+# Old files
+index_old.html
+research.md
+prd.md
+
+# Original photo folders with Cyrillic names (copied to images/)
+"Ателье DressCode на метро Девяткино/"
+"до после/"
